@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+</head>
+<body>
+    <header>
+        <div class="header_logo">
+            <div class="logo">
+                <img src="logo-heaven.png" alt="">
+            </div>
+        </div>
+
+        <div class="nav_menu">
+            <ul id="menu">
+                <li><a href="">Home</a>
+                    <!-- <ul>
+                        <li><a href="">Home1</a></li>
+                        <li><a href="">Home2</a></li>
+                        <li><a href="">Home3</a></li>
+                    </ul> -->
+                </li>
+
+                <li><a href="">About</a></li>
+                <li><a href="">Gallery</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </div>
+        
+        <div class="mobile_menu">
+            <i class="fa-solid fa-bars" onclick="controlMenu()"></i>
+        </div>
+        <!-- <div class="mobile_menu">
+            <i class="fa-solid fa-bars" onclick="menuControl()"></i>
+        </div> -->
+
+    </header>
+        
+
+
+    <script>
+        let x=0; //) means hidden
+         function controlMenu(){
+            if (x==0){
+                document.getElementById('menu').style.height="50vh"; 
+                x=1; //1 means shown
+            }
+           else{
+                document.getElementById('menu').style.height="0vh"; 
+                x=0; //1 means shown
+            }
+         }
+    </script>
+</body>
+</html>
